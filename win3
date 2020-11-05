@@ -1,0 +1,7 @@
+#!/bin/bash
+# Places the window to the middle from the left big screen:
+# [ x ][ ]
+wmctrl -r :ACTIVE: -b remove,fullscreen
+wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+wmctrl -r :ACTIVE: -e 0,1200,0,1440,1050
+wmctrl -r :ACTIVE: -b add,maximized_vert

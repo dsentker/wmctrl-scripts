@@ -1,0 +1,7 @@
+#!/bin/bash
+# Places the window to the right screen:
+# [ xx][ ]
+wmctrl -r :ACTIVE: -b remove,fullscreen
+wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+wmctrl -r :ACTIVE: -e 0,1440,0,2400,1050
+wmctrl -r :ACTIVE: -b add,maximized_vert
